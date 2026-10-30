@@ -8,7 +8,7 @@ The exhibit features a talking duck that responds when students scan QR codes at
 
 ## How It Works
 
-A Raspberry Pi runs the main Python program, handling QR code scanning, audio playback, sensor input, and coordination of the animatronic mechanisms. An Arduino-compatible board communicates with the Raspberry Pi through Firmata to control physical inputs and outputs.
+A Raspberry Pi runs the main Python program, handling QR code scanning, audio playback, sensor input, and coordination of the animatronic mechanisms. An Arduino Uno board communicates with the Raspberry Pi through Firmata to control physical inputs and outputs.
 
 The exhibit includes several moving mechanisms:
 
@@ -29,7 +29,7 @@ The project was a team effort. The dialogue was written collaboratively, and the
 ## Hardware
 
 - Raspberry Pi
-- Arduino-compatible microcontroller
+- Arduino Uno microcontroller
 - Motors and servos
 - Hydraulic mechanism
 - Pneumatic pump and valve
@@ -52,5 +52,5 @@ The project was a team effort. The dialogue was written collaboratively, and the
 
 ## System Architecture
 
-The Raspberry Pi handles the main program and higher-level logic, including camera processing, QR code recognition, audio playback, and coordination of the different mechanisms. The Arduino-compatible board handles physical inputs and outputs through Firmata, allowing the Raspberry Pi to control the exhibit's hardware. Since all of the motors we used didn't have sensors of how much they had turned, every device had to be retrofit with a specific sensor to keep track of what was moving.
+The Raspberry Pi handles the main program and higher-level logic, including camera processing, QR code recognition, audio playback, and coordination of the different mechanisms. The Arduino Uno board handles physical inputs and outputs through Firmata, allowing the Raspberry Pi to control the exhibit's hardware. Since all of the motors we used didn't have sensors of how much they had turned, every device had to be retrofit with a specific sensor to keep track of what was moving.
 
