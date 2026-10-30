@@ -16,6 +16,7 @@ The exhibit includes several moving mechanisms:
 - Dragonfly: A motor moves a dragonfly around the exhibit to simulate flight.
 - Hydraulic turtle: A motor pushes a plunger that operates the turtle's hydraulic mechanism.
 - Frog: A pneumatic pump and valve cause the frog's tongue, made from a party blower, to extend.
+- Fish: A motor spins a fish to simulate it jumping out of the water.
 
 The system also uses sensors and a camera to respond to activity around the exhibit.
 
@@ -51,5 +52,5 @@ The project was a team effort. The dialogue was written collaboratively, and the
 
 ## System Architecture
 
-The Raspberry Pi handles the main program and higher-level logic, including camera processing, QR code recognition, audio playback, and coordination of the different mechanisms. The Arduino-compatible board handles physical inputs and outputs through Firmata, allowing the Raspberry Pi to control the exhibit's hardware.
+The Raspberry Pi handles the main program and higher-level logic, including camera processing, QR code recognition, audio playback, and coordination of the different mechanisms. The Arduino-compatible board handles physical inputs and outputs through Firmata, allowing the Raspberry Pi to control the exhibit's hardware. Since all of the motors we used didn't have sensors of how much they had turned, every device had to be retrofit with a specific sensor to keep track of what was moving.
 
